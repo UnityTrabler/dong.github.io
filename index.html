@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script>
+
+window.onload = function () {
+    var button = document.getElementById('button').addEventListener('click', event_hadller);
+    var num = 0
+
+    function event_hadller(){
+        document.getElementById('numText1').textContent = "Click Game";        
+        document.getElementById('numText2').textContent = "Score : " + num;
+        document.getElementById('button').textContent = "click";
+        document.getElementById('button').style.width = "600px";
+        document.getElementById('button').style.height = "100px";
+        num+=1;
+    }
+
+}
+
+</script>
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1">
+<style>
+
+@media screen and (max-width: 767px) {}
+
+body{overflow: hidden; }
+
+div{border: 1px solid black; margin: 50px; text-align: center; font-weight: 100px; font-family: Consolas;
+    padding: 50px;  width: auto;;
+    }
+
+div:nth-child(1)>a:nth-child(1){float: left; }
+     
+div:nth-child(1)>a:nth-child(2){float: right;}
+
+div:nth-child(2){}
+
+</style>
+
+
+</head>
+
+<body>
+<div><a>Homepage Main Title Left</a> <a>Homepage Main Title Right</a></div>
+<div>
+    My name is None.<br>
+    i like python and python.<br>
+    i want to be my worst coding better than well.<br>
+    i can't english.<br>
+    my english skill is very worst.<br>
+    i want to teach me English.
+</div>
+<div>
+    <a id="numText1"></a>
+    <br><br>
+    <a id="numText2"></a>
+    <br><br>
+    <button id="button">Hidden Button</button>
+</div>
+
+</body>
+</html>
